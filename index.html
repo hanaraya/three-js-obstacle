@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Three.js Obstacle Game</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <div id="gameOverScreen" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.7); color: white; padding: 20px; font-size: 24px; text-align: center; display: none;">
+        Game Over!<br>
+        Score: <span id="finalScore">0</span><br>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+
+    <div id="scoreDisplay" style="position: absolute; top: 10px; left: 10px; color: white; font-size: 20px;">Score: <span id="currentScore">0</span></div>
+
+    <script src="https://threejs.org/build/three.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
